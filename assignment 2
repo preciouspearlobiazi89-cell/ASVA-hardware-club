@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string name; 
+    double voltage;
+    double resistance;
+    double Current;
+    double Power;
+//Ask for user's name
+cout << "Enter your name:";
+getline(cin, name);
+//Ask for voltage 
+cout << "Enter voltage(V):";
+cin >> voltage;
+cout << "Enter resistance(ohms):";
+cin >> resistance;
+Current= voltage/resistance;
+Power= voltage*Current;
+cout << "\n---Electronics Calculator---"<<endl;
+cout << "Name:" << name << endl;
+cout << "Resistance:" << resistance << "ohms" << endl;
+cout << "Current:" << Current << "A" << endl;
+cout << "Power:" << Power << "W" << endl;
+return 0;
+
+    
+
+}
